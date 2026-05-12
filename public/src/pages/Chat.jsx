@@ -14,6 +14,11 @@ export default function Chat() {
     nevigate("/register");
   }
 
+  const chat_dashboard = ()=>{
+    console.log("here we aree")
+    nevigate("/chathome");
+  }
+
   return (
     <>
       <div className='d-flex'>
@@ -27,6 +32,7 @@ export default function Chat() {
             
             <button className='p-1' onClick={login_Btn}>Login</button>
             <button className='p-1' onClick={register_Btn}>Register</button>
+            <button className='p-1' onClick={chat_dashboard}>chat Dashboard</button>
           </div>
         </div>
       </div>
